@@ -1,0 +1,35 @@
+.bg-sim {
+    border-radius: 25px;
+    min-width: 300px;
+    max-width: 310px;
+}
+
+.vertical {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-style: inset;
+    border-width: 1px;
+    height: 70px;
+    opacity: 0.5;
+}
+
+.horizontal {
+    width: 100%;
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    opacity: 0.5;
+}
+
+.inputUser {
+    width: 65%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+    font-size: 3em;
+}

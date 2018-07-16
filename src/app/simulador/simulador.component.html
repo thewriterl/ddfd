@@ -1,0 +1,29 @@
+<div class="bg-dark bg-sim col-lg-5 col-md-5 col-sm-5 col-4">
+  <div class="row mx-auto text-white">
+    <div class="valor mx-auto">
+      <h3 class="my-3">De quanto você precisa?</h3>
+      <h6 class="d-inline">R$</h6>
+      <input type="tel" id="valor" class="inputUser d-inline bg-dark border-0 text-white" (change)="helper()" placeholder="1.000" name="emprestimo" [(ngModel)]="emprestimo">
+      <button (click)="mais(emprestimo)" class="btn btn-light ml-1" style="float: right">+</button>
+      <button (click)="menos(emprestimo)" class="btn btn-light" style="float: right">-</button>
+      <br>
+      <input class="my-4 w-100" type="range" min="100" max="5000" name="emprestimo" [(ngModel)]="emprestimo">
+    </div>
+    <div class="bottom d-flex mx-auto">
+      <div class="parcelas text-center mx-auto">
+        <small>Em um empréstimo de</small>
+        <br>
+        <h3 class="d-inline">12</h3>
+        <br>
+        <h6 class="d-inline">meses</h6>
+      </div>
+      <hr class="vertical">
+      <div class="meses text-center mx-auto">
+        <small class="d-block mb-2">Parcelas de</small>
+        <h6 class="m-0 d-inline">R$</h6>
+        <h3 class="m-0 d-inline">656,30</h3>
+      </div>
+    </div>
+    <button (click)="simular(emprestimo)" class="mx-auto mt-2 mb-4 w-75 btn btn-success">Melhore este valor</button>
+  </div>
+</div>
